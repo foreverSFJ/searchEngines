@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+	<!-- 使用CSS选择器，class是“.”，id是“#”,还可以使用标签名，下标 进行组合，务必要唯一定位 -->
+<!-- 
+		<site>
+		<title>网站名称</title>
+		<charset>网站编码字符集</charset>
+		<url>网站首页链接</url>
+		<chapter-list-selector>章节目录界面，章节列表选择，需要定位到每一个章节所在标签，一般是a标签</chapter-list-selector>
+		<chapter-content-title-selector>具体章节内容界面，标题选择，定位到具体章节文本，一般是h1标签</chapter-content-title-selector>
+		<chapter-content-content-selector>具体章节内容界面，章节内容选择，定位到具体章节内容，一般是div标签</chapter-content-content-selector>
+		<chapter-content-prev-selector>具体章节内容界面，前一章地址选择，一般是 a标签，还有下标</chapter-content-prev-selector>
+		<chapter-content-next-selector>具体章节内容界面，后一章地址选择，一般是 a标签，还有下标</chapter-content-next-selector>
+以下是搜索网站全部小说列表并保存到温蒂数据库需要用到
+		<novel-selector>具体小说列表界面，里面的小说一般都是网站的小说库，这里选择器选择每本小说的具体信息，定位到某一本小说，一般都在tr中，且这个tr中使用td保存小说的具体信息，所以一般定位到tr就行</novel-selector>
+		<novel-next-page-selector>具体小说列表界面，下一页小说列表的选择，一般在a标签中</novel-next-page-selector>
+	</site> 
+-->
+	<!-- 看书中网站最近正在重整 -->
+	<site>
+		<title>看书中</title>
+		<charset>gbk</charset>
+		<url>http://www.kanshuzhong.com</url>
+		<chapter-list-selector>ul.mulu_list li a</chapter-list-selector>
+		<chapter-content-title-selector>h1</chapter-content-title-selector>
+		<chapter-content-content-selector>#htmlContent</chapter-content-content-selector>
+		<chapter-content-prev-selector>.chapter_Turnpage a,0</chapter-content-prev-selector>
+		<chapter-content-next-selector>.chapter_Turnpage a,2</chapter-content-next-selector>
+		<!-- 需要重新定义 -->
+		<novel-selector>.rec_rullist ul</novel-selector>
+		<novel-next-page-selector>#pagelink .next</novel-next-page-selector>
+	</site>
+	<site>
+		<title>顶点小说</title>
+		<charset>gbk</charset>
+		<url>https://www.x23us.com</url>
+		<chapter-list-selector>tr td a</chapter-list-selector>
+		<chapter-content-title-selector>#amain h1,0</chapter-content-title-selector>
+		<chapter-content-content-selector>#contents</chapter-content-content-selector>
+		<chapter-content-prev-selector>#footlink a,0</chapter-content-prev-selector>
+		<chapter-content-next-selector>#footlink a,2</chapter-content-next-selector>
+		<novel-selector>#content dd tr</novel-selector>
+		<novel-next-page-selector>#pagelink .next</novel-next-page-selector>
+	</site>
+	<site>
+		<title>笔趣阁</title>
+		<charset>gbk</charset>
+		<url>http://www.biquyun.com/</url>
+		<chapter-list-selector>#list dd a</chapter-list-selector>
+		<chapter-content-title-selector>.bookname h1</chapter-content-title-selector>
+		<chapter-content-content-selector>#content</chapter-content-content-selector>
+		<chapter-content-prev-selector>.bottem2 a,1</chapter-content-prev-selector>
+		<chapter-content-next-selector>.bottem2 a,3</chapter-content-next-selector>
+		<!-- 完整小说库不可见 -->
+	</site>
+	<site>
+		<title>笔下文学</title>
+		<charset>UTF-8</charset>
+		<url>https://www.bxwx9.org</url>
+		<chapter-list-selector>#TabCss dd a</chapter-list-selector>
+		<chapter-content-title-selector>#title</chapter-content-title-selector>
+		<chapter-content-content-selector>#content</chapter-content-content-selector>
+		<chapter-content-prev-selector>#footlink a,2</chapter-content-prev-selector>
+		<chapter-content-next-selector>#footlink a,4</chapter-content-next-selector>
+		<novel-selector>.grid tbody tr</novel-selector>
+		<novel-next-page-selector>#pagelink .next</novel-next-page-selector>
+	</site>
+</sites>
